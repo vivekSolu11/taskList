@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ae13f6fb78.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Todo list</title>
+
+    <link href="./assets/styles/app.css" rel="stylesheet" />
+    <link href="./assets/styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h2 class="text-center">Tasks</h2>
+          <div class="form-group addCatergory">
+            <label for="itemInput">Add Task</label>
+            <input type="text" class="form-control" name="" id="itemInput" />
+          </div>
+          <div class="operations">
+          <button id="addButton" class="btn btn-primary">Add </button>
+          <button id="clearButton" class="btn btn-danger">
+            Clear Tasks List
+          </button>
+          <br/>
+          <label for="categories" style="margin-top: 10px;">Choose a categories:</label>
+          <select class="category" id="category">
+            <option selected="true">All</option>
+            <option value="Home">Home</option>
+            <option value="Study">Study</option>
+            <option value="Shopping">Shopping</option>
+          </select>
+          <div>
+          <label for="itemInput">Search Task</label>
+          <div class="search"><input type="text" class="form-control inputsearch" id="searchTask" />
+          <button id="search" class="btn btn-primary searchbutton">Search </button></div></div>
+        </div>
+          <h3 style="margin-left: 40px;">Task List</h3>
+          <ul id="todoList" class="swapCategory"></ul>
+        </div>
+        <div class="col-lg-6">
+          <div id="subTask" class="" style="display: none">
+            <h2 class="text-center " id="subTaskHead"></h2>
+            <li class="subList">
+              <div class="operations">
+              <label for="itemInput">Add Sub-Task</label>
+              <input
+                type="text"
+                class="form-control subInput"
+                name=""
+                id="subItemInput"
+              />
+              <button id="addSubTask" class="btn btn-primary">
+                Add 
+              </button>
+              <h3>Sub-Task List</h3>
+            </div>
+              <ul id="subtodoList" class="swapTask"></ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/scripts/app.js" type="module"></script>
+  </body>
+</html>
