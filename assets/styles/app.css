@@ -1,0 +1,95 @@
+* {
+  font-family: "Raleway", sans-serif !important;
+  color: #3d405b;
+}
+
+h2.text-center {
+  font-weight: 800;
+}
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+#todoList label {
+  width: 60%;
+  margin-left: 10px;
+  /* cursor: pointer !important; */
+}
+#todoList li {
+  list-style-type: none;
+}
+
+.completed {
+  background-color: #bcc6ed2e !important;
+  /* cursor: pointer !important; */
+}
+
+.uncompleted label {
+  color: #afa7a7;
+  text-decoration: line-through;
+}
+#todoList .btn {
+  margin-left: 10px;
+}
+
+#subtodoList label {
+  width: 49%;
+}
+#subtodoList li {
+  list-style-type: none;
+}
+
+.subtodoList label {
+  color: #afa7a7;
+  text-decoration: line-through;
+}
+#subtodoList .btn {
+  margin-left: 10px;
+}
+
+.sidebar {
+  flex: 1 0 auto;
+  /* max-width: 300px; */
+  background-color: #f2cc8f;
+  transition: all 0.2s ease-in;
+}
+
+.submenu {
+  flex: 1 1 auto;
+  align-items: center;
+  min-width: 0;
+  background-color: #f4f1de;
+}
+
+.container {
+  margin: 0 !important;
+  /* display: flex !important;
+    flex: 1 0 auto;  
+    flex-direction: row; */
+  padding: 0 !important;
+}
+
+.subInput {
+  /* width: 67% !important; */
+  margin-bottom: 15px !important;
+}
+
+.subList {
+  list-style: none !important;
+  /* margin-top: 85px !important; */
+}
+
+.addCatergory,
+.operations {
+  margin-left: 40px;
+}
+
+.search {
+  clear: both;
+}
+.inputsearch {
+    width: 80% !important;
+    float: left;
+    margin-right: 10px;
+}
